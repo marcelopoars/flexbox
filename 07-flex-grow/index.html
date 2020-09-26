@@ -1,0 +1,44 @@
+<!-- 
+    * Aula sobre "Flexbox"
+    * Marcelo Pereira
+    * https://marcelopoars.github.io/
+    * https://github.com/marcelopoars/flexbox
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox - flex-grow</title>
+</head>
+<body>
+<!--
+    Define a habilidade de um "flex item" crescer.
+
+    flex-grow: número;
+    // Basta definir um número
+
+    flex-grow: 0;
+    // Obedece o width do elemento ou o flex-basis.
+-->
+
+    <h1>flex-grow: flex-grow: 0; / flex-grow: 1;</h1>
+    <h2>Elementos em linha (flex-direction: row;)</h2>
+
+    <section class="container">
+
+        <!-- Container linha / row -->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item flex-grow-2">Item 3</div>
+        <div class="item flex-grow-3">Item 4</div>
+
+    </section>  
+
+    <br><br><br>
+    <br><br><br>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- 
+    * Aula sobre "Flexbox"
+    * Marcelo Pereira
+    * https://marcelopoars.github.io/
+    * https://github.com/marcelopoars/flexbox
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox - flex-shrink</title>
+</head>
+<body>
+<!--
+    flex-shrink: 1;
+    // Valor padrão, permite que os itens tenham os seus tamanhos (seja esse tamanho definido a partir de width ou flex-basis) reduzidos para caber no container.
+
+    flex-shrink: 0;
+    // Não permite a diminuição dos itens, assim um item com flex-basis: 300px; nunca diminuirá menos do que 300px, mesmo que o conteúdo não ocupe todo esse espaço.
+
+    flex-shrink: número;
+    // Um item com shrink: 3 diminuirá 3 vezes mais que um item com 1.
+-->
+
+    <h1>flex-shrink: flex-shrink: 0; / flex-shrink: 1; / flex-shrink: (número);</h1>
+    <h2>Elementos em linha (flex-direction: row;)</h2>
+
+    <section class="container">
+
+        <!-- Container linha / row -->
+        <div class="item">Item 1</div>
+        <div class="item flex-shrink-2">Item 222 222 22</div>
+        <div class="item flex-shrink-2">Item 3</div>
+        <div class="item">Item 4</div>
+
+    </section>  
+
+    <br><br><br>
+    <br><br><br>
+
+</body>
+</html>

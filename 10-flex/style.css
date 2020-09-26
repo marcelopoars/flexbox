@@ -1,0 +1,45 @@
+/* 
+    * Aula sobre "Flexbox"
+    * Marcelo Pereira
+    * https://marcelopoars.github.io/
+    * https://github.com/marcelopoars/flexbox
+ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-family: sans-serif; color: #666; }
+h1 { margin: 30px 0 10px 0; text-align: center; font-size: 1.5rem; }
+h2 { margin-bottom: 30px;  text-align: center; font-size: 1.2rem; }
+section, div { border-radius: 3px; }
+
+
+
+/* Container pai */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    border: 1px solid #333;
+    display: flex;
+}
+
+/* Itens filhos */
+.item {
+    margin: 5px;
+    background-color: rgb(247, 93, 66);
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFF;
+
+    /* Define flex-grow: 1; flex-shrink: 1; e flex-basis: 0; */
+    flex: 1;
+
+    /* PADRÃO */
+    /* Define flex-grow: 1; flex-shrink: 1; e flex-basis: 0; */
+    /* flex: 0 1 auto; */
+
+    /* Define flex-grow: 2; flex-shrink: 1; e flex-basis: 0; */
+    /* flex: 2; */
+
+    /* Define flex-grow: 1; flex-shrink: 1; e flex-basis: 0; */
+    flex: 3 2 300px;
+
+}
+

@@ -1,0 +1,45 @@
+/* 
+    * Aula sobre "Flexbox"
+    * Marcelo Pereira
+    * https://marcelopoars.github.io/
+    * https://github.com/marcelopoars/flexbox
+ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-family: sans-serif; color: #666; }
+h1 { margin: 30px 0 10px 0; text-align: center; font-size: 1.5rem; }
+h2 { margin-bottom: 30px;  text-align: center; font-size: 1.2rem; }
+section, div { border-radius: 3px; }
+
+
+/* Container pai */
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    border: 1px solid #333;
+    height: 300px; /* Determinando altura do container*/
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* Valor padrão: "stretch" */
+    /* align-content: stretch; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+}
+
+/* Itens filhos */
+.item {
+    margin: 5px;
+    background-color: rgb(247, 93, 66);
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFF;
+    /* flex: 1; */
+}
+
+
+/* Alinha itens em coluna */
+.column {
+    flex-direction: column;
+}

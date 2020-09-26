@@ -1,0 +1,78 @@
+<!-- 
+    * Aula sobre "Flexbox"
+    * Marcelo Pereira
+    * https://marcelopoars.github.io/
+    * https://github.com/marcelopoars/flexbox
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox - align-items</title>
+</head>
+<body>
+<!--
+    align-items: stretch; (esticar, estender, forçar itens)
+    // Valor padrão, ele que faz com que os flex itens cresçam igualmente.
+
+    align-items: flex-start;
+    // Alinha os itens ao início.
+
+    align-items: flex-end;
+    // Alinha os itens ao final.
+
+    align-items: center;
+    // Alinha os itens ao centro.
+-->
+
+    <h1>align-items: stretch, flex-start, flex-end, center, baseline</h1>
+    <h2>Elementos em linha (flex-direction: row;)</h2>
+
+    <section class="container">
+
+        <!-- Container linha / row -->
+        <div class="item">Item 1</div>
+        <div class="item">ItemFilho2 - segundo maior</div>
+        <div class="item">Item Filho Numero 3: força os outros itens aumentarem de tamanho</div>
+        <div class="item">4</div>
+        <div class="item">Item 5</div>
+
+    </section>  
+
+    <br><br><br>
+    
+    
+    <h1>align-items: stretch, flex-start, flex-end, center, baseline</h1>
+    <h2>Elementos em coluna (flex-direction: column;)</h2>
+    
+    <!-- Container coluna / column -->
+    <section class="container column">
+        <div class="item">Item 1</div>
+        <div class="item">ItemFilho2 - segundo maior</div>
+        <div class="item">Item Filho Numero 3: força os outros itens aumentarem de tamanho</div>
+        <div class="item">4</div>
+        <div class="item">Item 5</div>
+    </section> 
+    
+    <br><br><br>
+
+
+    <h1>justify-content: center / align-items: center;</h1>
+    <h2>Alinhando item ao centro do container ou página</h2>
+
+    <!-- Container conteúdo centralizado -->
+    <section class="container centralizar-item">
+        <div class="item">Este item está verticalmente alinhado ao centro</div>
+        <!-- <div class="item">Este item está verticalmente alinhado ao centro</div> -->
+        <!-- <div class="item">Este item está verticalmente alinhado ao centro</div> -->
+    </section> 
+
+
+    <br><br><br>
+
+
+</body>
+</html>

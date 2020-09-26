@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Flexbox - Propriedades para itens "container / elemento pai"</title>
+</head>
+
+<body>
+
+
+  <main>
+
+    <h1>Flexbox</h1>
+    <h3>Propriedades para itens "container / elemento pai"</h3>
+
+    <style class="css-container"></style>
+    <code class=" language-css"><span class="token selector">.container</span><span class="token punctuation">{</span>
+       <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+       <span class="token property">flex-direction</span><span class="token punctuation">:</span> <select name="flexdirection">
+      <option value="row" selected>row</option> 
+      <option value="row-reverse" >row-reverse</option>
+      <option value="column">column</option>
+      <option value="column-reverse">column-reverse</option>
+    </select><span class="token punctuation">;</span>
+       <span class="token property">flex-wrap</span><span class="token punctuation">:</span> <select name="flexwrap">
+      <option value="nowrap" selected>nowrap</option> 
+      <option value="wrap" >wrap</option>
+      <option value="wrap-reverse">wrap-reverse</option>
+    </select><span class="token punctuation">;</span>
+       <span class="token property">justify-content</span><span class="token punctuation">:</span> <select name="justifycontent">
+      <option value="flex-start" selected>flex-start</option> 
+      <option value="flex-end" >flex-end</option>
+      <option value="center">center</option>
+      <option value="space-between" >space-between</option>
+      <option value="space-around">space-around</option>
+      <option value="space-evenly" >space-evenly</option>
+    </select><span class="token punctuation">;</span>
+       <span class="token property">align-items</span><span class="token punctuation">:</span> <select name="alignitems">
+      <option value="stretch" selected>stretch</option>
+      <option value="flex-start" >flex-start</option> 
+      <option value="flex-end" >flex-end</option>
+      <option value="center">center</option>
+      <option value="baseline">baseline</option>
+    </select><span class="token punctuation">;</span>  
+       <span class="token property">align-content</span><span class="token punctuation">:</span> <select name="aligncontent">
+    <option value="stretch" selected>stretch</option>
+      <option value="flex-start" >flex-start</option> 
+      <option value="flex-end" >flex-end</option>
+      <option value="center">center</option>
+      <option value="space-between">space-between</option>
+      <option value="space-around">space-around</option>
+    </select><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>
+    </code>
+
+    <div class="flexbox-container">
+      <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

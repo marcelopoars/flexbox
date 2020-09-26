@@ -1,0 +1,94 @@
+<!-- 
+    * Aula sobre "Flexbox"
+    * Marcelo Pereira
+    * https://marcelopoars.github.io/
+    * https://github.com/marcelopoars/flexbox
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox - align-content</title>
+</head>
+<body>
+<!--
+align-content: stretch;
+// Valor padrão, ele que faz com que os flex itens cresçam igualmente na vertical.
+
+align-content: flex-start;
+// Alinha todas as linhas de itens ao início.
+
+align-content: flex-end;
+// Alinha todas as linhas de itens ao final.
+
+align-content: center;
+// Alinha todas as linhas de itens ao centro.
+
+align-content: space-between;
+// Cria um espaçamento igual entre as linhas. Mantendo a primeira grudada no topo e a última no bottom.
+
+align-content: space-around;
+// Cria um espaçamento entre as linhas. Os espaçamentos do meio são duas vezes maiores que o top e bottom.
+-->
+
+    <h1>align-content: stretch, flex-start, flex-end, center, space-between, space-around</h1>
+    <h2>Elementos em linha (flex-direction: row;)</h2>
+
+    <section class="container">
+
+        <!-- Container linha / row -->
+        <div class="item">Item 1</div>
+        <div class="item">ItemFilho2 - segundo maior</div>
+        <div class="item">Item Filho Numero 3: força os outros itens aumentarem de tamanho</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        <div class="item">Item 13</div>
+        <div class="item">Item 14</div>
+
+    </section>  
+
+    <br><br><br>
+    
+    
+    <h1>align-content: stretch, flex-start, flex-end, center, space-between, space-around</h1>
+    <h2>Elementos em coluna (flex-direction: column;)</h2>
+    
+    <!-- Container coluna / column -->
+    <section class="container column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+        <div class="item">Item 12</div>
+        <div class="item">Item 13</div>
+        <div class="item">Item 14</div>
+        <div class="item">Item 15</div>
+        <div class="item">Item 16</div>
+        <div class="item">Item 17</div>
+        <div class="item">Item 18</div>
+    </section> 
+    
+    <br><br><br>
+
+    <br><br><br>
+
+
+</body>
+</html>
